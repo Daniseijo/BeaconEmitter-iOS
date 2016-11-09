@@ -55,7 +55,10 @@ class ViewController: UIViewController {
             let majorValue: CLBeaconMajorValue = CLBeaconMajorValue(majorText.text!)!
             let minorValue: CLBeaconMajorValue = CLBeaconMajorValue(minorText.text!)!
             
-            localBeacon = CLBeaconRegion(proximityUUID: uuid, major: majorValue, minor: minorValue, identifier: "TestBeacon")
+            localBeacon = CLBeaconRegion(proximityUUID: uuid,
+                                         major: majorValue,
+                                         minor: minorValue,
+                                         identifier: "TestBeacon")
             
             peripheralData = localBeacon.peripheralData(withMeasuredPower: nil)
             peripheralManager = CBPeripheralManager(delegate: self, queue: nil)
