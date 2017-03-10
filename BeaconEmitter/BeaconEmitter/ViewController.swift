@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var majorText: UITextField!
     @IBOutlet weak var minorText: UITextField!
+    @IBOutlet weak var measuredPowerText: UITextField!
     
     @IBOutlet weak var switchTransmit: UISwitch!
     
@@ -53,14 +54,16 @@ class ViewController: UIViewController {
             
             let uuid = UUID(uuidString: uuidString)!
             let majorValue: CLBeaconMajorValue = CLBeaconMajorValue(majorText.text!)!
-            let minorValue: CLBeaconMajorValue = CLBeaconMajorValue(minorText.text!)!
+            let minorValue: CLBeaconMinorValue = CLBeaconMajorValue(minorText.text!)!
             
             localBeacon = CLBeaconRegion(proximityUUID: uuid,
                                          major: majorValue,
                                          minor: minorValue,
                                          identifier: "TestBeacon")
             
-            peripheralData = localBeacon.peripheralData(withMeasuredPower: nil)
+            let measuredPower: NSNumber = NSNumber(value: Int(measuredPowerText.text!)!)
+            
+            peripheralData = localBeacon.peripheralData(withMeasuredPower: measuredPower)
             peripheralManager = CBPeripheralManager(delegate: self, queue: nil)
             
         } else {

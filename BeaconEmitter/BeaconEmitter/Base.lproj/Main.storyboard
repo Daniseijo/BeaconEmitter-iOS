@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,31 +22,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Major" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-ic-yp0">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Elw-OV-oWf">
+                                <rect key="frame" x="16" y="57" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMr-Pt-shb">
+                                <rect key="frame" x="16" y="124" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAZ-fo-LFr">
+                                <rect key="frame" x="16" y="95" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Measured Power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3D-n0-akW">
+                                <rect key="frame" x="16" y="162" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transmit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjG-kS-KoQ">
+                                <rect key="frame" x="16" y="229" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U91-DM-G7n">
+                                <rect key="frame" x="16" y="191" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Vkl-eV-2I5">
+                                <rect key="frame" x="163" y="258" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="I4Z-8B-2uo"/>
+                                </constraints>
                                 <connections>
                                     <action selector="switchChanging:" destination="BYZ-38-t0r" eventType="valueChanged" id="YnY-iw-aEY"/>
                                 </connections>
@@ -52,27 +75,34 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vkl-eV-2I5" firstAttribute="top" secondItem="GjG-kS-KoQ" secondAttribute="bottom" constant="8" symbolic="YES" id="CYB-Xc-eG1"/>
+                            <constraint firstItem="U3D-n0-akW" firstAttribute="top" secondItem="XMr-Pt-shb" secondAttribute="bottom" constant="8" id="8wP-Gk-jBJ"/>
+                            <constraint firstItem="U3D-n0-akW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ci3-qK-8nB"/>
+                            <constraint firstItem="GjG-kS-KoQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="E5F-V3-hZj"/>
                             <constraint firstItem="Elw-OV-oWf" firstAttribute="trailing" secondItem="RAZ-fo-LFr" secondAttribute="trailing" id="EgR-Os-IDp"/>
-                            <constraint firstItem="GjG-kS-KoQ" firstAttribute="centerX" secondItem="Vkl-eV-2I5" secondAttribute="centerX" id="H6k-K9-2Vb"/>
                             <constraint firstItem="2XQ-ic-yp0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IBp-je-KLS"/>
                             <constraint firstItem="Elw-OV-oWf" firstAttribute="top" secondItem="2XQ-ic-yp0" secondAttribute="bottom" constant="8" symbolic="YES" id="JZ2-gU-Qqd"/>
-                            <constraint firstItem="XMr-Pt-shb" firstAttribute="trailing" secondItem="GjG-kS-KoQ" secondAttribute="trailing" id="NwI-mI-09Z"/>
+                            <constraint firstItem="Vkl-eV-2I5" firstAttribute="top" secondItem="GjG-kS-KoQ" secondAttribute="bottom" constant="8" id="MBl-Hb-P5T"/>
                             <constraint firstItem="2XQ-ic-yp0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OLz-bb-FM9"/>
-                            <constraint firstItem="XMr-Pt-shb" firstAttribute="leading" secondItem="GjG-kS-KoQ" secondAttribute="leading" id="PU2-UW-paj"/>
                             <constraint firstItem="RAZ-fo-LFr" firstAttribute="trailing" secondItem="XMr-Pt-shb" secondAttribute="trailing" id="Tlk-cy-5TZ"/>
                             <constraint firstItem="2XQ-ic-yp0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="UbV-1E-ih3"/>
+                            <constraint firstItem="U91-DM-G7n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vdu-Y9-0Qc"/>
                             <constraint firstItem="RAZ-fo-LFr" firstAttribute="top" secondItem="Elw-OV-oWf" secondAttribute="bottom" constant="8" symbolic="YES" id="Vs4-s9-dFz"/>
+                            <constraint firstItem="Vkl-eV-2I5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wd1-xn-SbE"/>
                             <constraint firstItem="Elw-OV-oWf" firstAttribute="leading" secondItem="RAZ-fo-LFr" secondAttribute="leading" id="YPh-XE-eFB"/>
                             <constraint firstItem="2XQ-ic-yp0" firstAttribute="leading" secondItem="Elw-OV-oWf" secondAttribute="leading" id="agQ-Ru-paJ"/>
+                            <constraint firstItem="GjG-kS-KoQ" firstAttribute="top" secondItem="U91-DM-G7n" secondAttribute="bottom" constant="8" id="epD-ed-cgY"/>
                             <constraint firstItem="XMr-Pt-shb" firstAttribute="top" secondItem="RAZ-fo-LFr" secondAttribute="bottom" constant="8" symbolic="YES" id="f5A-xW-3tI"/>
-                            <constraint firstItem="GjG-kS-KoQ" firstAttribute="top" secondItem="XMr-Pt-shb" secondAttribute="bottom" constant="8" symbolic="YES" id="ttv-Y5-YSS"/>
+                            <constraint firstItem="U91-DM-G7n" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="mJN-gy-9tQ"/>
+                            <constraint firstItem="GjG-kS-KoQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nkf-gC-0La"/>
+                            <constraint firstItem="U3D-n0-akW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rTs-Hw-P06"/>
                             <constraint firstItem="2XQ-ic-yp0" firstAttribute="trailing" secondItem="Elw-OV-oWf" secondAttribute="trailing" id="xq9-K1-WBy"/>
+                            <constraint firstItem="U91-DM-G7n" firstAttribute="top" secondItem="U3D-n0-akW" secondAttribute="bottom" constant="8" id="yyL-bc-36i"/>
                             <constraint firstItem="RAZ-fo-LFr" firstAttribute="leading" secondItem="XMr-Pt-shb" secondAttribute="leading" id="zda-E9-lwp"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="majorText" destination="Elw-OV-oWf" id="OnI-6a-xHJ"/>
+                        <outlet property="measuredPowerText" destination="U91-DM-G7n" id="JOf-wp-FAg"/>
                         <outlet property="minorText" destination="XMr-Pt-shb" id="laV-yd-IPF"/>
                         <outlet property="switchTransmit" destination="Vkl-eV-2I5" id="Qdd-rT-rfz"/>
                     </connections>
